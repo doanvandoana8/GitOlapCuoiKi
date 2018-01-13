@@ -16,28 +16,28 @@ CREATE TABLE [poor_weather] (
 --create weather station
 CREATE TABLE [weather_station] (
     [StationID] int,
-    [StationName] varchar(100),
-    [CountryID] varchar(100)
+    [StationName] varchar(200),
+    [CountryID] varchar(50)
 )
 
 --create country table
-CREATE TABLE [OLE DB Destination] (
+CREATE TABLE [country] (
     [CountryID] varchar(50),
     [CountryName] varchar(200)
 )
 
 --create date table
-CREATE TABLE [OLE DB Destination] (
+CREATE TABLE [date] (
     [DateID] varchar(50),
     [Day] int,
     [Month] int,
-    [Year] int,
+    [Year] int
 )
 
 --create fact table
 CREATE TABLE [fact] (
     [FactID] int,
-    [StationID] varchar(50),
+    [StationID] int,
     [DateID] varchar(50),
     [PoorWeatherID] varchar(50),
     [Precip] float,
