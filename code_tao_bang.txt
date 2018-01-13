@@ -1,0 +1,50 @@
+--create poor weather table
+CREATE TABLE [poor_weather] (
+    [PoorWeatherID] varchar(50),
+    [Thunder] int,
+    [Sleet] int,
+    [Hail] int,
+    [Dust or Sand] int,
+    [Smoke or Haze] int,
+    [Blowing Snow] int,
+    [Rain] int,
+    [ Snow] int,
+    [Glaze] int,
+    [Fog] int
+)
+
+--create weather station
+CREATE TABLE [weather_station] (
+    [StationID] int,
+    [StationName] varchar(100),
+    [CountryID] varchar(100)
+)
+
+--create country table
+CREATE TABLE [OLE DB Destination] (
+    [CountryID] varchar(50),
+    [CountryName] varchar(200)
+)
+
+--create date table
+CREATE TABLE [OLE DB Destination] (
+    [DateID] varchar(50),
+    [Day] int,
+    [Month] int,
+    [Year] int,
+)
+
+--create fact table
+CREATE TABLE [fact] (
+    [FactID] int,
+    [StationID] varchar(50),
+    [DateID] varchar(50),
+    [PoorWeatherID] varchar(50),
+    [Precip] float,
+    [MaxCelsius] float,
+    [MinCelsius] float,
+    [WindyDriection] float,
+    [MaximumWindySpeed] float,
+    [SnowDepthInch] float,
+    [WindyTime] float  
+)
