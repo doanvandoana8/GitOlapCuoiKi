@@ -54,9 +54,16 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>SCjDAc1ew0ad5zYn0msnzPZHXLE=13-Jan-18 16:37:3313-Jan-18 16:33:24qr1lKD00EjYeJwJrNDjMMrPVM5o=13-Jan-18 16:33:2513-Jan-18 16:33:24</TimeStamp>
+        <TimeStamp>eQZ1zrYeyolBa2mK2FESX25OEuY=14-Jan-18 00:12:3613-Jan-18 16:33:24qr1lKD00EjYeJwJrNDjMMrPVM5o=14-Jan-18 00:12:3613-Jan-18 16:33:24</TimeStamp>
         <ID>
           <String>Do An Olap Ck Ver1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>dIdaO7Hd5nqbCOj/qbaleWM3y2c=13-Jan-18 21:37:1913-Jan-18 21:37:19</TimeStamp>
+        <ID>
+          <String>Fact</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -71,5 +78,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2018-01-13T09:37:40.67Z</LastDeployed>
+  <LastDeployed>2018-01-13T17:12:38.5Z</LastDeployed>
 </DeploymentSnapshot>

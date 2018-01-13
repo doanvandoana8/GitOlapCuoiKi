@@ -22,6 +22,11 @@
         <ID>Poor Weather</ID>
       </Dimension>
     </Dimensions>
+    <MiningStructures>
+      <MiningStructure>
+        <ID>Fact</ID>
+      </MiningStructure>
+    </MiningStructures>
     <Cubes>
       <Cube>
         <ID>Do An Olap Ck Ver1</ID>

@@ -44,6 +44,12 @@
       <FullPath>Do An Olap Ck Ver1.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
+  <MiningModels>
+    <ProjectItem>
+      <Name>Fact.dmm</Name>
+      <FullPath>Fact.dmm</FullPath>
+    </ProjectItem>
+  </MiningModels>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
