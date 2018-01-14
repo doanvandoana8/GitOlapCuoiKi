@@ -1,4 +1,6 @@
-﻿--4.1 a. Độ dày của tuyết sâu nhất trong tất cả các năm ở từng quốc gia.
+﻿--DEMO MDX : Một số truy vấn
+--Người thực hiện: 14520168
+--4.1 a. Độ dày của tuyết sâu nhất trong tất cả các năm ở từng quốc gia.
 SELECT NON EMPTY { [Measures].[Maximum Snow Depth Inch]} ON COLUMNS,
 		NON EMPTY {([Date].[Year].[Year] ,[Weather Station].[Country Name].[Country Name])} ON ROWS
 FROM [Do An Olap Ck Ver1];
@@ -57,3 +59,39 @@ WHERE [Poor Weather].[Smoke Or Haze].&[1];
  WHERE [Weather Station].[Country Name].&[Democratic Yemen];
 
 --4.1 f.Độ sâu lớn nhất của tuyết kèm theo điều kiện thời tiết có sấm set tại trạm đo simiutak  trong từng tháng của năm.
+ SELECT NON EMPTY { [Measures].[Maximum Snow Depth Inch] } ON COLUMNS, 
+		NON EMPTY { [Date].[Month].[Month] }  ON ROWS
+ FROM [Do An Olap Ck Ver1]
+ WHERE ([Poor Weather].[Thunder].&[1],[Weather Station].[Station Name].&[SIMIUTAK]);
+
+ --4.1 f.Độ sâu lớn nhất của tuyết kèm theo điều kiện thời tiết có sấm set tại trạm đo simiutak  trong từng tháng của năm.
+ --Xoay dữ liệu
+ SELECT NON EMPTY { [Measures].[Maximum Snow Depth Inch] } ON ROWS, 
+		NON EMPTY { [Date].[Month].[Month] }  ON COLUMNS
+ FROM [Do An Olap Ck Ver1]
+ WHERE ([Poor Weather].[Thunder].&[1],[Weather Station].[Station Name].&[SIMIUTAK]);
+
+--4.1 g. Nhiệt độ thấp nhất từng đo được tại các trạm đo trong tháng 12 năm 1943
+ SELECT NON EMPTY { [Measures].[Minimum Min Celsius] } ON COLUMNS, 
+		NON EMPTY { [Weather Station].[Station Name].[Station Name] }  ON ROWS
+ FROM [Do An Olap Ck Ver1]
+ WHERE ( [Date].[Month].&[12],[Date].[Year].&[1943]);
+
+ --4.1 g. Nhiệt độ thấp nhất từng đo được tại các trạm đo trong tháng 12 năm 1943(Xoay dữ liệu)
+ SELECT NON EMPTY { [Measures].[Minimum Min Celsius] } ON ROWS, 
+		NON EMPTY { [Weather Station].[Station Name].[Station Name] }  ON COLUMNS
+ FROM [Do An Olap Ck Ver1]
+ WHERE ( [Date].[Month].&[12],[Date].[Year].&[1943]);
+
+
+--4.1 h. Tổng lượng mưa của tất cả các quốc gia trong năm 1944 có kèm theo sấm sét.
+ SELECT NON EMPTY { [Measures].[Sum Precip] } ON COLUMNS, 
+		NON EMPTY {[Weather Station].[Country Name].[Country Name]  }  ON ROWS
+ FROM [Do An Olap Ck Ver1]
+ WHERE ([Poor Weather].[Thunder].&[1] , [Date].[Year].&[1944]);
+
+--4.1 h. Tổng lượng mưa của tất cả các quốc gia trong năm 1944 có kèm theo sấm sét.(Xoay dữ liệu)
+ SELECT NON EMPTY { [Measures].[Sum Precip] } ON ROWS, 
+		NON EMPTY {[Weather Station].[Country Name].[Country Name]  }  ON COLUMNS
+ FROM [Do An Olap Ck Ver1]
+ WHERE ([Poor Weather].[Thunder].&[1] , [Date].[Year].&[1944]);
