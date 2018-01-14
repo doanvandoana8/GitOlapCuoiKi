@@ -54,7 +54,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>eQZ1zrYeyolBa2mK2FESX25OEuY=14-Jan-18 00:12:3613-Jan-18 16:33:24qr1lKD00EjYeJwJrNDjMMrPVM5o=14-Jan-18 00:12:3613-Jan-18 16:33:24</TimeStamp>
+        <TimeStamp>cMhukPuZL19WTV79casmbwkxY30=14-Jan-18 19:41:1613-Jan-18 16:33:24qr1lKD00EjYeJwJrNDjMMrPVM5o=14-Jan-18 19:41:1613-Jan-18 16:33:24</TimeStamp>
         <ID>
           <String>Do An Olap Ck Ver1</String>
         </ID>
@@ -78,5 +78,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2018-01-13T17:12:38.5Z</LastDeployed>
+  <LastDeployed>2018-01-14T12:41:55.786667Z</LastDeployed>
 </DeploymentSnapshot>

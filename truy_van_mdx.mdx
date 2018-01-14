@@ -95,3 +95,34 @@ WHERE [Poor Weather].[Smoke Or Haze].&[1];
 		NON EMPTY {[Weather Station].[Country Name].[Country Name]  }  ON COLUMNS
  FROM [Do An Olap Ck Ver1]
  WHERE ([Poor Weather].[Thunder].&[1] , [Date].[Year].&[1944]);
+
+ --4.1 i.Trong năm 1945 với điều kiện thời tiết có sấm chớp, hãy liệt kê các quốc gia có tổng lượng mưa lớn nhất và lớn hơn 41.12 mm
+ SELECT NON EMPTY {[Measures].[Maximum Precip] } ON COLUMNS, 
+		NON EMPTY  [Weather Station].[Country Name].[Country Name] having [Measures].[Maximum Precip] >41.12 ON ROWS
+ FROM [Do An Olap Ck Ver1]
+ WHERE ([Poor Weather].[Thunder].&[1] , [Date].[Year].&[1945]);
+
+ --4.1 j.Thống kê nhiệt độ cao nhất mà các trạm đo được ở các tháng 3, tháng 5 và tháng 9 trong năm 1943.
+SELECT NON EMPTY { [Measures].[Maximum Max Celsius] } ON COLUMNS, 
+		NON EMPTY { ([Weather Station].[Station Name].[Station Name], [Date].[Month].[Month]) }  ON ROWS 
+FROM ( SELECT ( { [Poor Weather].[Thunder].&[1] } ) ON COLUMNS 
+		FROM ( SELECT ( { [Date].[Year].&[1943] } ) ON COLUMNS 
+				FROM ( SELECT ( { [Date].[Month].&[3], [Date].[Month].&[5], [Date].[Month].&[9] } ) ON COLUMNS
+					 FROM [Do An Olap Ck Ver1]
+					 )
+			 )
+	) 
+WHERE ( [Date].[Year].&[1943], [Poor Weather].[Thunder].&[1] );
+
+
+ --4.1 k. Tổng lượng mưa mà các trạm đo được trong quốc gia India và Italy trong quý 3 (tháng 7-8-9) năm 1945. 
+ --Sắp xếp giảm dần theo tổng lượng mưa. Chỉ lấy TOP 10 trạm có lượng mưa cao nhất.
+ --Thực hiện việc cắt khối dữ liệu theo cấu trúc cây
+SELECT NON EMPTY { [Measures].[Sum Precip] } ON COLUMNS, 
+		NON EMPTY { topcount([Weather Station].[Station Name].[Station Name],10,[Measures].[Sum Precip]) }  ON ROWS 
+FROM ( SELECT ( { [Date].[Month].&[7], [Date].[Month].&[8], [Date].[Month].&[9] } ) ON COLUMNS 
+		FROM ( SELECT ( { [Weather Station].[Country Name].&[India], [Weather Station].[Country Name].&[Italy] } ) ON COLUMNS 
+				FROM [Do An Olap Ck Ver1])
+			) 
+WHERE ( [Weather Station].[Country Name].CurrentMember, [Date].[Month].CurrentMember, [Date].[Year].&[1945]); 
+
