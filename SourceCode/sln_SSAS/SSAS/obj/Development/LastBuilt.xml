@@ -1,4 +1,29 @@
 ﻿<Infos>
+  <Item name="Fact.dmm">
+    <Time>636514762396153433</Time>
+    <Hash length="20">
+      <b>116</b>
+      <b>135</b>
+      <b>90</b>
+      <b>59</b>
+      <b>177</b>
+      <b>221</b>
+      <b>230</b>
+      <b>122</b>
+      <b>155</b>
+      <b>8</b>
+      <b>232</b>
+      <b>255</b>
+      <b>169</b>
+      <b>182</b>
+      <b>165</b>
+      <b>121</b>
+      <b>99</b>
+      <b>55</b>
+      <b>203</b>
+      <b>103</b>
+    </Hash>
+  </Item>
   <Item name="Do An Olap Ck Ver1.ds">
     <Time>636514570183670731</Time>
     <Hash length="20">
@@ -22,31 +47,6 @@
       <b>31</b>
       <b>248</b>
       <b>211</b>
-    </Hash>
-  </Item>
-  <Item name="Do An Olap Ck Ver1.dsv">
-    <Time>636514577290388089</Time>
-    <Hash length="20">
-      <b>112</b>
-      <b>98</b>
-      <b>11</b>
-      <b>198</b>
-      <b>174</b>
-      <b>243</b>
-      <b>132</b>
-      <b>106</b>
-      <b>146</b>
-      <b>183</b>
-      <b>128</b>
-      <b>32</b>
-      <b>244</b>
-      <b>69</b>
-      <b>100</b>
-      <b>153</b>
-      <b>160</b>
-      <b>33</b>
-      <b>177</b>
-      <b>115</b>
     </Hash>
   </Item>
   <Item name="Do An Olap Ck Ver1.cube">
@@ -99,6 +99,31 @@
       <b>200</b>
     </Hash>
   </Item>
+  <Item name="Do An Olap Ck Ver1.dsv">
+    <Time>636514577290388089</Time>
+    <Hash length="20">
+      <b>112</b>
+      <b>98</b>
+      <b>11</b>
+      <b>198</b>
+      <b>174</b>
+      <b>243</b>
+      <b>132</b>
+      <b>106</b>
+      <b>146</b>
+      <b>183</b>
+      <b>128</b>
+      <b>32</b>
+      <b>244</b>
+      <b>69</b>
+      <b>100</b>
+      <b>153</b>
+      <b>160</b>
+      <b>33</b>
+      <b>177</b>
+      <b>115</b>
+    </Hash>
+  </Item>
   <Item name="SSAS.database">
     <Time>636514568513904090</Time>
     <Hash length="20">
@@ -122,31 +147,6 @@
       <b>62</b>
       <b>208</b>
       <b>5</b>
-    </Hash>
-  </Item>
-  <Item name="Fact.dmm">
-    <Time>636514762396153433</Time>
-    <Hash length="20">
-      <b>116</b>
-      <b>135</b>
-      <b>90</b>
-      <b>59</b>
-      <b>177</b>
-      <b>221</b>
-      <b>230</b>
-      <b>122</b>
-      <b>155</b>
-      <b>8</b>
-      <b>232</b>
-      <b>255</b>
-      <b>169</b>
-      <b>182</b>
-      <b>165</b>
-      <b>121</b>
-      <b>99</b>
-      <b>55</b>
-      <b>203</b>
-      <b>103</b>
     </Hash>
   </Item>
   <Item name="Date.dim">

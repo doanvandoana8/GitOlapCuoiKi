@@ -1,0 +1,19 @@
+﻿--4.1 a. Độ dày của tuyết sâu nhất trong tất cả các năm ở từng quốc gia.
+SELECT NON EMPTY { [Measures].[Maximum Snow Depth Inch]} ON COLUMNS,
+		NON EMPTY {([Date].[Year].[Year] ,[Weather Station].[Country Name].[Country Name])} ON ROWS
+FROM [Do An Olap Ck Ver1];
+
+--4.1 a. Độ dày của tuyết sâu nhất trong tất cả các năm ở từng quốc gia.(Xoay khối)
+SELECT NON EMPTY { [Measures].[Maximum Snow Depth Inch]} ON rows,
+		NON EMPTY {([Date].[Year].[Year] ,[Weather Station].[Country Name].[Country Name])} ON columns
+FROM [Do An Olap Ck Ver1];
+
+--4.1 b. Tổng thời gian gió thổi ở tất cả các quốc gia trong năm 1942.
+SELECT NON EMPTY {[Measures].[Sum Windy Time]} ON COLUMNS,
+		NON EMPTY {([Weather Station].[Country Name].[Country Name],[Date].[Year].[Year])} ON ROWS
+FROM [Do An Olap Ck Ver1];
+
+--4.1 b. Tổng thời gian gió thổi ở tất cả các quốc gia trong năm 1942.(Xoay khối)
+SELECT NON EMPTY {[Measures].[Sum Windy Time]} ON ROWS,
+		NON EMPTY {([Weather Station].[Country Name].[Country Name],[Date].[Year].[Year])} ON COLUMNS
+FROM [Do An Olap Ck Ver1];
