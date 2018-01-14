@@ -16,6 +16,10 @@
       <Name>cau_3.rdl</Name>
       <FullPath>cau_3.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>reportdemo.rdl</Name>
+      <FullPath>reportdemo.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
