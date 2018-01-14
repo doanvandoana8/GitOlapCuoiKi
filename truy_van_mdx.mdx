@@ -17,3 +17,43 @@ FROM [Do An Olap Ck Ver1];
 SELECT NON EMPTY {[Measures].[Sum Windy Time]} ON ROWS,
 		NON EMPTY {([Weather Station].[Country Name].[Country Name],[Date].[Year].[Year])} ON COLUMNS
 FROM [Do An Olap Ck Ver1];
+
+--4.1 c. Tổng thời gian gió thổi theo từng trạm đo trong từng tháng với thời tiết có sấm sét.
+SELECT NON EMPTY {[Measures].[Sum Windy Time]} ON COLUMNS,
+		NON EMPTY {( [Date].[Month].[Month],[Weather Station].[Station Name].[Station Name])} ON ROWS
+FROM [Do An Olap Ck Ver1];
+
+--4.1 c. Tổng thời gian gió thổi theo từng trạm đo trong từng tháng với thời tiết có sấm sét.(xoay dữ liệu)
+SELECT NON EMPTY {[Measures].[Sum Windy Time]} ON ROWS,
+		NON EMPTY {( [Date].[Month].[Month],[Weather Station].[Station Name].[Station Name])} ON COLUMNS
+FROM [Do An Olap Ck Ver1];
+
+--4.1 d. Top 5 quốc gia có nhiệt độ cao nhất kèm theo thời tiết smoke and haze.
+SELECT NON EMPTY { [Measures].[Maximum Max Celsius]} ON COLUMNS,
+		NON EMPTY {TOPCOUNT(
+			[Weather Station].[Country Name].[Country Name],5,[Measures].[Maximum Max Celsius]
+			)} ON ROWS
+FROM [Do An Olap Ck Ver1]
+WHERE [Poor Weather].[Smoke Or Haze].&[1];
+
+--4.1 d. Top 5 quốc gia có nhiệt độ cao nhất kèm theo thời tiết smoke and haze.(xoay dữ liệu)
+SELECT NON EMPTY { [Measures].[Maximum Max Celsius]} ON ROWS,
+		NON EMPTY {TOPCOUNT(
+			[Weather Station].[Country Name].[Country Name],5,[Measures].[Maximum Max Celsius]
+			)} ON COLUMNS
+FROM [Do An Olap Ck Ver1]
+WHERE [Poor Weather].[Smoke Or Haze].&[1];
+
+--4.1 e.Tốc độ gió thổi và thời gian gió thổi lớn nhất của quốc gia Democratic Yemen trong tất cả các tháng, thời gian tăng dần.
+ SELECT NON EMPTY { [Measures].[Maximum Windy Time] } ON COLUMNS, 
+		NON EMPTY { ORDER([Date].[Month].[Month],[Measures].[Maximum Windy Time],BASC) }  ON ROWS
+ FROM [Do An Olap Ck Ver1]
+ WHERE [Weather Station].[Country Name].&[Democratic Yemen];
+
+ --4.1 e.Tốc độ gió thổi và thời gian gió thổi lớn nhất của quốc gia Democratic Yemen trong tất cả các tháng, thời gian tăng dần.(Xoay khối)
+ SELECT NON EMPTY { [Measures].[Maximum Windy Time] } ON ROWS, 
+		NON EMPTY { ORDER([Date].[Month].[Month],[Measures].[Maximum Windy Time],BASC) }  ON COLUMNS
+ FROM [Do An Olap Ck Ver1]
+ WHERE [Weather Station].[Country Name].&[Democratic Yemen];
+
+--4.1 f.Độ sâu lớn nhất của tuyết kèm theo điều kiện thời tiết có sấm set tại trạm đo simiutak  trong từng tháng của năm.
