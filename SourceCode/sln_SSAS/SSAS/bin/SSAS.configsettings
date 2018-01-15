@@ -26,6 +26,9 @@
       <MiningStructure>
         <ID>Fact</ID>
       </MiningStructure>
+      <MiningStructure>
+        <ID>Fact 2</ID>
+      </MiningStructure>
     </MiningStructures>
     <Cubes>
       <Cube>

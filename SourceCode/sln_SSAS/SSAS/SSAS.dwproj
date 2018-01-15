@@ -49,6 +49,10 @@
       <Name>Fact.dmm</Name>
       <FullPath>Fact.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Fact 2.dmm</Name>
+      <FullPath>Fact 2.dmm</FullPath>
+    </ProjectItem>
   </MiningModels>
   <Configurations>
     <Configuration>

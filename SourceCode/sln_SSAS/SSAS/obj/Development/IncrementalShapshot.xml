@@ -61,9 +61,16 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>dIdaO7Hd5nqbCOj/qbaleWM3y2c=13-Jan-18 21:37:1913-Jan-18 21:37:19</TimeStamp>
+        <TimeStamp>dcB7d2D1FfjH3mb7edeyWghJahs=15-Jan-18 10:25:5415-Jan-18 10:04:47</TimeStamp>
         <ID>
           <String>Fact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>99yOspt+dRP3bTzF09g/dhjgs14=15-Jan-18 10:30:2715-Jan-18 10:30:18</TimeStamp>
+        <ID>
+          <String>Fact 2</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -78,5 +85,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2018-01-14T12:41:55.786667Z</LastDeployed>
+  <LastDeployed>2018-01-15T03:32:16.86Z</LastDeployed>
 </DeploymentSnapshot>
