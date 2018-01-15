@@ -120,10 +120,10 @@ WHERE ( [Date].[Year].&[1943], [Poor Weather].[Thunder].&[1] );
  --Sắp xếp giảm dần theo tổng lượng mưa. Chỉ lấy TOP 10 trạm có lượng mưa cao nhất.
  --Thực hiện việc cắt khối dữ liệu theo cấu trúc lồngs
 SELECT NON EMPTY { [Measures].[Sum Precip] } ON COLUMNS, 
-		NON EMPTY { topcount([Weather Station].[Station Name].[Station Name],10,[Measures].[Sum Precip]) }  ON ROWS 
+		NON EMPTY { TOPCOUNT([Weather Station].[Station Name].[Station Name],10,[Measures].[Sum Precip]) }  ON ROWS 
 FROM ( SELECT ( { [Date].[Month].&[7], [Date].[Month].&[8], [Date].[Month].&[9] } ) ON COLUMNS 
 		FROM ( SELECT ( { [Weather Station].[Country Name].&[India], [Weather Station].[Country Name].&[Italy] } ) ON COLUMNS 
 				FROM [Do An Olap Ck Ver1])
 			) 
-WHERE ( [Weather Station].[Country Name].CurrentMember, [Date].[Month].CurrentMember, [Date].[Year].&[1945]); 
+WHERE ([Date].[Year].&[1945]); 
 
