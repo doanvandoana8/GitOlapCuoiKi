@@ -53,6 +53,10 @@
       <Name>Fact 2.dmm</Name>
       <FullPath>Fact 2.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Fact 3.dmm</Name>
+      <FullPath>Fact 3.dmm</FullPath>
+    </ProjectItem>
   </MiningModels>
   <Configurations>
     <Configuration>

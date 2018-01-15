@@ -1,0 +1,287 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1697a9fa-4c6a-4b9b-8146-93f605db2267" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>wpre</ID>
+  <Name>wpre</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="2db2c869-ba40-4df0-904b-82a53f2dc397">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>Do An Olap Ck Ver1</CubeID>
+    <CubeDimensionID>Poor Weather</CubeDimensionID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c4003655-5130-4dd4-ad9f-f4cb5ee66430">
+      <ID>Poor Weather ID</ID>
+      <Name>Poor Weather ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="a4ffa89b-c1c6-4829-961b-8ba5023b274f">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Poor Weather ID</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0527a7f4-2f57-4f38-a591-7441f4de8607">
+      <ID>Blowing Snow</ID>
+      <Name>Blowing Snow</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="4f9e36d3-499b-418f-a4ca-3ac2d026c095">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Blowing Snow</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6031acce-91a6-4de5-b66f-8c7cc1bf5bae">
+      <ID>Dust Or Sand</ID>
+      <Name>Dust Or Sand</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="d62cccb1-f0ce-4a7b-9588-7d7c5d6113e3">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Dust Or Sand</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5f2bba9c-a23a-4a7c-845d-753471bc80ff">
+      <ID>Fog</ID>
+      <Name>Fog</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="dea98017-5f90-4df4-ae84-c102f8ef3105">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Fog</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="469d3ff6-9a86-4aee-9427-1dc5c5dcb955">
+      <ID>Glaze</ID>
+      <Name>Glaze</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="11317b24-5bc9-4660-8534-40edf7bf9b31">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Glaze</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="85bd9a84-9100-47e7-82f0-c851c8030639">
+      <ID>Hail</ID>
+      <Name>Hail</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="8f276dd4-990c-4dce-918c-67f6045f4a1a">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Hail</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="65c88773-b1e2-45d8-85e8-8a3ddc5f2cdd">
+      <ID>Rain</ID>
+      <Name>Rain</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="7cb2fd1a-8354-4389-b32a-ebd41d71178e">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Rain</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b924d6c1-2ccd-461e-91f3-4a175b1979f3">
+      <ID>Sleet</ID>
+      <Name>Sleet</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="8f91af1f-956a-4af8-8c9b-4e969701f2c0">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Sleet</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="463bddee-fcc7-43b8-8ff8-7578f42cfbcd">
+      <ID>Smoke Or Haze</ID>
+      <Name>Smoke Or Haze</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="bacf2766-fdec-49c0-9d7d-de8a261ae043">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Smoke Or Haze</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5d760826-e772-40d0-9700-dfd0661f4afa">
+      <ID>Snow</ID>
+      <Name>Snow</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="c91230e6-509e-4506-a47e-43b436abcb7a">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Snow</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="09b95a0a-8585-466c-aa65-ab56408f405c">
+      <ID>Thunder</ID>
+      <Name>Thunder</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="7b23cade-222e-49f4-8678-25e2580f6612">
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+        <AttributeID>Thunder</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="4c9bf484-cb33-4870-906e-3f6330ec97ee">
+      <ID>wpre</ID>
+      <Name>wpre</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="df9cf062-8efa-4820-9495-238590053b9c">
+          <ID>Poor Weather ID</ID>
+          <Name>Poor Weather ID</Name>
+          <SourceColumnID>Poor Weather ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="0eb5ae2f-d796-40ee-84e9-c56ca7c8cca1">
+          <ID>Blowing Snow</ID>
+          <Name>Blowing Snow</Name>
+          <SourceColumnID>Blowing Snow</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="aa1b4493-d688-41fe-8d8b-417bb4a84c30">
+          <ID>Dust Or Sand</ID>
+          <Name>Dust Or Sand</Name>
+          <SourceColumnID>Dust Or Sand</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="5dd58355-fcea-4b92-a72b-6e883ae5bb0e">
+          <ID>Fog</ID>
+          <Name>Fog</Name>
+          <SourceColumnID>Fog</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="d257e094-3ee7-4b11-8596-8920427bcf01">
+          <ID>Glaze</ID>
+          <Name>Glaze</Name>
+          <SourceColumnID>Glaze</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="e2c2b58f-c5f8-4495-b503-8e8632cdd768">
+          <ID>Hail</ID>
+          <Name>Hail</Name>
+          <SourceColumnID>Hail</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="2af6ca5d-c3d9-4d32-aa6c-10b53c04d9bb">
+          <ID>Rain</ID>
+          <Name>Rain</Name>
+          <SourceColumnID>Rain</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="cef04fcd-74a1-4ba0-9c55-294820ceb10f">
+          <ID>Sleet</ID>
+          <Name>Sleet</Name>
+          <SourceColumnID>Sleet</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="707530d4-8f3b-49f4-a931-adefc3c35d3e">
+          <ID>Smoke Or Haze</ID>
+          <Name>Smoke Or Haze</Name>
+          <SourceColumnID>Smoke Or Haze</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="97f2743c-1424-4f77-9fcc-033e442c7334">
+          <ID>Snow</ID>
+          <Name>Snow</Name>
+          <SourceColumnID>Snow</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="be2442b5-5655-4531-bf37-97be699aa943">
+          <ID>Thunder</ID>
+          <Name>Thunder</Name>
+          <SourceColumnID>Thunder</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>

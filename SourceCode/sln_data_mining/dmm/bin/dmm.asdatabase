@@ -1,0 +1,2361 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>do_an_olap_ck_ver1</ID>
+  <Name>do_an_olap_ck_ver1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <Dimensions>
+    <Dimension>
+      <ID>Weather Station</ID>
+      <Name>Weather Station</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2726" scrolltop="-5238" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8493" y="12779" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="weather_station" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_weather_station" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-2726</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-5238</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Do An Olap Ck Ver1</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Station ID</ID>
+          <Name>Station ID</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_weather_station</TableID>
+                <ColumnID>StationID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Station Name</AttributeID>
+              <Name>Station Name</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Country ID</AttributeID>
+              <Name>Country ID</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Station Name</ID>
+          <Name>Station Name</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>200</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_weather_station</TableID>
+                <ColumnID>StationName</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Country ID</ID>
+          <Name>Country ID</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_weather_station</TableID>
+                <ColumnID>CountryID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2726" scrolltop="-5027" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8493" y="12779" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="date" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000a50a0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_date" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-2726</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-5027</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Do An Olap Ck Ver1</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Date ID</ID>
+          <Name>Date ID</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_date</TableID>
+                <ColumnID>DateID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Day</AttributeID>
+              <Name>Day</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Month</AttributeID>
+              <Name>Month</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Year</AttributeID>
+              <Name>Year</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Day</ID>
+          <Name>Day</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_date</TableID>
+                <ColumnID>Day</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Month</ID>
+          <Name>Month</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_date</TableID>
+                <ColumnID>Month</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_date</TableID>
+                <ColumnID>Year</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Poor Weather</ID>
+      <Name>Poor Weather</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2639" scrolltop="-2779" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8493" y="12779" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="poor_weather" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3175" height="8625" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="00080000670c0000b1210000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_poor_weather" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-2639</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-2779</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Do An Olap Ck Ver1</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Poor Weather ID</ID>
+          <Name>Poor Weather ID</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>PoorWeatherID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Thunder</AttributeID>
+              <Name>Thunder</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Sleet</AttributeID>
+              <Name>Sleet</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Hail</AttributeID>
+              <Name>Hail</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Dust Or Sand</AttributeID>
+              <Name>Dust Or Sand</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Smoke Or Haze</AttributeID>
+              <Name>Smoke Or Haze</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Blowing Snow</AttributeID>
+              <Name>Blowing Snow</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Rain</AttributeID>
+              <Name>Rain</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Snow</AttributeID>
+              <Name>Snow</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Glaze</AttributeID>
+              <Name>Glaze</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Fog</AttributeID>
+              <Name>Fog</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Thunder</ID>
+          <Name>Thunder</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>Thunder</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Sleet</ID>
+          <Name>Sleet</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>Sleet</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Hail</ID>
+          <Name>Hail</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>Hail</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Dust Or Sand</ID>
+          <Name>Dust Or Sand</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>Dust_x0020_or_x0020_Sand</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Smoke Or Haze</ID>
+          <Name>Smoke Or Haze</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>Smoke_x0020_or_x0020_Haze</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Blowing Snow</ID>
+          <Name>Blowing Snow</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>Blowing_x0020_Snow</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Rain</ID>
+          <Name>Rain</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>Rain</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Snow</ID>
+          <Name>Snow</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>_x0020_Snow</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Glaze</ID>
+          <Name>Glaze</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>Glaze</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Fog</ID>
+          <Name>Fog</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_poor_weather</TableID>
+                <ColumnID>Fog</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Poor Weather_DMDim</ID>
+      <Name>Poor Weather_DMDim</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Poor Weather_DMDSV</DataSourceViewID>
+      </Source>
+      <MiningModelID>Poor Weather</MiningModelID>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>ATTRIBUTE_NAME</ID>
+          <Name>ATTRIBUTE_NAME</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>DIMENSION_CONTENT_ROWSET</TableID>
+                <ColumnID>ATTRIBUTE_NAME</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>PARENT_UNIQUE_NAME</ID>
+          <Name>MiningDimensionContentNodes</Name>
+          <Usage>Parent</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>DIMENSION_CONTENT_ROWSET</TableID>
+                <ColumnID>PARENT_UNIQUE_NAME</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <MembersWithData>NonLeafDataHidden</MembersWithData>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>NODE_RULE</ID>
+          <Name>NODE_RULE</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>8192</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>DIMENSION_CONTENT_ROWSET</TableID>
+                <ColumnID>NODE_RULE</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>NODE_SUPPORT</ID>
+          <Name>NODE_SUPPORT</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Double</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>DIMENSION_CONTENT_ROWSET</TableID>
+                <ColumnID>NODE_SUPPORT</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>NODE_UNIQUE_NAME</ID>
+          <Name>NODE_UNIQUE_NAME</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>DIMENSION_CONTENT_ROWSET</TableID>
+                <ColumnID>NODE_UNIQUE_NAME</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>DIMENSION_CONTENT_ROWSET</TableID>
+              <ColumnID>NODE_CAPTION</ColumnID>
+            </Source>
+          </NameColumn>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>PARENT_UNIQUE_NAME</AttributeID>
+              <Name>MiningDimensionContentNodes</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>ATTRIBUTE_NAME</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>ATTRIBUTE_NAME</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>NODE_RULE</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>NODE_RULE</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>NODE_SUPPORT</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>NODE_SUPPORT</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+  </Dimensions>
+  <Cubes>
+    <Cube>
+      <ID>Do An Olap Ck Ver1</ID>
+      <Name>olap cube</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7707" scrolltop="-14" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="83" x="21220" y="12779" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="date" left="517" top="12102" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000a50a0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_date" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="fact" left="20" top="4702" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3995" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000800009b0f000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_fact" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="weather_station" left="517" top="0" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_weather_station" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="poor_weather" left="6415" top="4702" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3175" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="00080000670c000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_poor_weather" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1618" top="9402" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[fact-date]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="2017" y="12102" />
+                  <point x="2017" y="9702" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1618" top="1803" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[fact-weather_station]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="2017" y="2302" />
+                  <point x="2017" y="4702" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="3715" top="6803" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[fact-poor_weather]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="18" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="6415" y="7202" />
+                  <point x="4015" y="7202" />
+                </connector>
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-7707</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-14</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>83</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Dimensions>
+        <Dimension>
+          <ID>Weather Station</ID>
+          <Name>Weather Station</Name>
+          <DimensionID>Weather Station</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Station ID</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Station Name</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Country ID</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Date</ID>
+          <Name>Date</Name>
+          <DimensionID>Date</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date ID</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Day</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Month</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Year</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Poor Weather</ID>
+          <Name>Poor Weather</Name>
+          <DimensionID>Poor Weather</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Poor Weather ID</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Thunder</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Sleet</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Hail</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Dust Or Sand</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Smoke Or Haze</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Blowing Snow</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Rain</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Snow</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Glaze</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Fog</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup>
+          <ID>Fact</ID>
+          <Name>Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Measures>
+            <Measure>
+              <ID>Fact ID</ID>
+              <Name>Fact ID</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact</TableID>
+                  <ColumnID>FactID</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Precip</ID>
+              <Name>Precip</Name>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact</TableID>
+                  <ColumnID>Precip</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Max Celsius</ID>
+              <Name>Max Celsius</Name>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact</TableID>
+                  <ColumnID>MaxCelsius</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Min Celsius</ID>
+              <Name>Min Celsius</Name>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact</TableID>
+                  <ColumnID>MinCelsius</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Windy Driection</ID>
+              <Name>Windy Driection</Name>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact</TableID>
+                  <ColumnID>WindyDriection</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Maximum Windy Speed</ID>
+              <Name>Maximum Windy Speed</Name>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact</TableID>
+                  <ColumnID>MaximumWindySpeed</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Snow Depth Inch</ID>
+              <Name>Snow Depth Inch</Name>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact</TableID>
+                  <ColumnID>SnowDepthInch</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Windy Time</ID>
+              <Name>Windy Time</Name>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact</TableID>
+                  <ColumnID>WindyTime</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Fact Count</ID>
+              <Name>Fact Count</Name>
+              <AggregateFunction>Count</AggregateFunction>
+              <Source>
+                <DataType>Integer</DataType>
+                <DataSize>4</DataSize>
+                <Source xsi:type="RowBinding">
+                  <TableID>dbo_fact</TableID>
+                </Source>
+              </Source>
+            </Measure>
+          </Measures>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Dimensions>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Weather Station</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Station ID</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_fact</TableID>
+                        <ColumnID>StationID</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date ID</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>WChar</DataType>
+                      <DataSize>50</DataSize>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_fact</TableID>
+                        <ColumnID>DateID</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Poor Weather</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Poor Weather ID</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>WChar</DataType>
+                      <DataSize>50</DataSize>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_fact</TableID>
+                        <ColumnID>PoorWeatherID</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Partitions>
+            <Partition>
+              <ID>Fact</ID>
+              <Name>Fact</Name>
+              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+              <State>Unprocessed</State>
+              <Source xsi:type="DsvTableBinding">
+                <DataSourceViewID>Do An Olap Ck Ver1</DataSourceViewID>
+                <TableID>dbo_fact</TableID>
+              </Source>
+              <StorageMode>Molap</StorageMode>
+              <CurrentStorageMode>Molap</CurrentStorageMode>
+              <ProcessingMode>Regular</ProcessingMode>
+            </Partition>
+          </Partitions>
+        </MeasureGroup>
+      </MeasureGroups>
+      <Source>
+        <DataSourceViewID>Do An Olap Ck Ver1</DataSourceViewID>
+      </Source>
+    </Cube>
+  </Cubes>
+  <MiningStructures>
+    <MiningStructure>
+      <ID>windydirPre</ID>
+      <Name>windydirPre</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="CubeDimensionBinding">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+      </Source>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Poor Weather ID</ID>
+          <Name>Poor Weather ID</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Poor Weather ID</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Key</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Blowing Snow</ID>
+          <Name>Blowing Snow</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Blowing Snow</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Dust Or Sand</ID>
+          <Name>Dust Or Sand</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Dust Or Sand</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Fog</ID>
+          <Name>Fog</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Fog</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Glaze</ID>
+          <Name>Glaze</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Glaze</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Hail</ID>
+          <Name>Hail</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Hail</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Rain</ID>
+          <Name>Rain</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Rain</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Sleet</ID>
+          <Name>Sleet</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Sleet</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Smoke Or Haze</ID>
+          <Name>Smoke Or Haze</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Smoke Or Haze</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Snow</ID>
+          <Name>Snow</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Snow</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Thunder</ID>
+          <Name>Thunder</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Thunder</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Windy Driection</ID>
+          <Name>Windy Driection</Name>
+          <Type>Double</Type>
+          <Source xsi:type="MeasureBinding">
+            <MeasureID>Windy Driection</MeasureID>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+      </Columns>
+      <MiningModels>
+        <MiningModel>
+          <ID>Poor Weather</ID>
+          <Name>Poor Weather</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Association_Rules</Algorithm>
+          <Columns>
+            <Column>
+              <ID>Poor Weather ID</ID>
+              <Name>Poor Weather ID</Name>
+              <SourceColumnID>Poor Weather ID</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>Rain</ID>
+              <Name>Rain</Name>
+              <SourceColumnID>Rain</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>Smoke Or Haze</ID>
+              <Name>Smoke Or Haze</Name>
+              <SourceColumnID>Smoke Or Haze</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>Thunder</ID>
+              <Name>Thunder</Name>
+              <SourceColumnID>Thunder</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Sleet</ID>
+              <Name>Sleet</Name>
+              <SourceColumnID>Sleet</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Hail</ID>
+              <Name>Hail</Name>
+              <SourceColumnID>Hail</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Dust Or Sand</ID>
+              <Name>Dust Or Sand</Name>
+              <SourceColumnID>Dust Or Sand</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Blowing Snow</ID>
+              <Name>Blowing Snow</Name>
+              <SourceColumnID>Blowing Snow</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+      </MiningModels>
+    </MiningStructure>
+    <MiningStructure>
+      <ID>wpre</ID>
+      <Name>wpre</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="CubeDimensionBinding">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+      </Source>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Poor Weather ID</ID>
+          <Name>Poor Weather ID</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Poor Weather ID</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Key</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Blowing Snow</ID>
+          <Name>Blowing Snow</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Blowing Snow</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Dust Or Sand</ID>
+          <Name>Dust Or Sand</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Dust Or Sand</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Fog</ID>
+          <Name>Fog</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Fog</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Glaze</ID>
+          <Name>Glaze</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Glaze</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Hail</ID>
+          <Name>Hail</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Hail</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Rain</ID>
+          <Name>Rain</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Rain</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Sleet</ID>
+          <Name>Sleet</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Sleet</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Smoke Or Haze</ID>
+          <Name>Smoke Or Haze</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Smoke Or Haze</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Snow</ID>
+          <Name>Snow</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Snow</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Thunder</ID>
+          <Name>Thunder</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Thunder</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+      </Columns>
+      <MiningModels>
+        <MiningModel>
+          <ID>wpre</ID>
+          <Name>wpre</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Decision_Trees</Algorithm>
+          <Columns>
+            <Column>
+              <ID>Poor Weather ID</ID>
+              <Name>Poor Weather ID</Name>
+              <SourceColumnID>Poor Weather ID</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>Blowing Snow</ID>
+              <Name>Blowing Snow</Name>
+              <SourceColumnID>Blowing Snow</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Dust Or Sand</ID>
+              <Name>Dust Or Sand</Name>
+              <SourceColumnID>Dust Or Sand</SourceColumnID>
+              <Usage>Predict</Usage>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Fog</ID>
+              <Name>Fog</Name>
+              <SourceColumnID>Fog</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Glaze</ID>
+              <Name>Glaze</Name>
+              <SourceColumnID>Glaze</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Hail</ID>
+              <Name>Hail</Name>
+              <SourceColumnID>Hail</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Rain</ID>
+              <Name>Rain</Name>
+              <SourceColumnID>Rain</SourceColumnID>
+              <Usage>Predict</Usage>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Sleet</ID>
+              <Name>Sleet</Name>
+              <SourceColumnID>Sleet</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Smoke Or Haze</ID>
+              <Name>Smoke Or Haze</Name>
+              <SourceColumnID>Smoke Or Haze</SourceColumnID>
+              <Usage>Predict</Usage>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Snow</ID>
+              <Name>Snow</Name>
+              <SourceColumnID>Snow</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Thunder</ID>
+              <Name>Thunder</Name>
+              <SourceColumnID>Thunder</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+          </Columns>
+        </MiningModel>
+      </MiningModels>
+    </MiningStructure>
+    <MiningStructure>
+      <ID>Poor Weather Demo</ID>
+      <Name>Poor Weather Demo</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="CubeDimensionBinding">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Do An Olap Ck Ver1</CubeID>
+        <CubeDimensionID>Poor Weather</CubeDimensionID>
+      </Source>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Poor Weather ID</ID>
+          <Name>Poor Weather ID</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Poor Weather ID</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Key</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Blowing Snow</ID>
+          <Name>Blowing Snow</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Blowing Snow</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Dust Or Sand</ID>
+          <Name>Dust Or Sand</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Dust Or Sand</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Fog</ID>
+          <Name>Fog</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Fog</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Glaze</ID>
+          <Name>Glaze</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Glaze</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Hail</ID>
+          <Name>Hail</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Hail</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Rain</ID>
+          <Name>Rain</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Rain</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Sleet</ID>
+          <Name>Sleet</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Sleet</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Smoke Or Haze</ID>
+          <Name>Smoke Or Haze</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Smoke Or Haze</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Snow</ID>
+          <Name>Snow</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Snow</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discretized</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Thunder</ID>
+          <Name>Thunder</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding">
+            <CubeID>Do An Olap Ck Ver1</CubeID>
+            <CubeDimensionID>Poor Weather</CubeDimensionID>
+            <AttributeID>Thunder</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+      </Columns>
+      <MiningModels>
+        <MiningModel>
+          <ID>Poor Weather Demo</ID>
+          <Name>Poor Weather Demo</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Association_Rules</Algorithm>
+          <Columns>
+            <Column>
+              <ID>Poor Weather ID</ID>
+              <Name>Poor Weather ID</Name>
+              <SourceColumnID>Poor Weather ID</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>Blowing Snow</ID>
+              <Name>Blowing Snow</Name>
+              <SourceColumnID>Blowing Snow</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Dust Or Sand</ID>
+              <Name>Dust Or Sand</Name>
+              <SourceColumnID>Dust Or Sand</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Hail</ID>
+              <Name>Hail</Name>
+              <SourceColumnID>Hail</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Rain</ID>
+              <Name>Rain</Name>
+              <SourceColumnID>Rain</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>Sleet</ID>
+              <Name>Sleet</Name>
+              <SourceColumnID>Sleet</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Smoke Or Haze</ID>
+              <Name>Smoke Or Haze</Name>
+              <SourceColumnID>Smoke Or Haze</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>Snow</ID>
+              <Name>Snow</Name>
+              <SourceColumnID>Snow</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+      </MiningModels>
+    </MiningStructure>
+  </MiningStructures>
+  <DataSources>
+    <DataSource xsi:type="RelationalDataSource">
+      <ID>Do An Olap Ck Ver1</ID>
+      <Name>olap dmm</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=vandoan\vandoan;Integrated Security=SSPI;Initial Catalog=do_an_olap_ck_ver1</ConnectionString>
+      <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
+      <ImpersonationInfo>
+        <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
+        <Account>vandoan</Account>
+        <ImpersonationInfoSecurity>PasswordRemoved</ImpersonationInfoSecurity>
+      </ImpersonationInfo>
+      <Timeout>PT0S</Timeout>
+    </DataSource>
+  </DataSources>
+  <DataSourceViews>
+    <DataSourceView>
+      <ID>Do An Olap Ck Ver1</ID>
+      <Name>olap dmm dsv</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+          <Value>1</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+          <Value></Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout>
+                  <dds>
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7849" scrolltop="-6" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="92" x="23733" y="14102" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                      <font>
+                        <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                      </font>
+                      <mouseicon>
+                        <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                      </mouseicon>
+                    </diagram>
+                    <layoutmanager>
+                      <ddsxmlobj />
+                    </layoutmanager>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="weather_station" left="517" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_weather_station" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="poor_weather" left="6415" top="4702" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3175" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="00080000670c000088130000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_poor_weather" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="fact" left="20" top="4702" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3995" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000800009b0f000088130000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_fact" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="date" left="517" top="12102" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000a50a0000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_date" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="1618" top="1803" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[fact-weather_station]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="2017" y="2302" />
+                        <point x="2017" y="4702" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="1618" top="9402" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[fact-date]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="2017" y="12102" />
+                        <point x="2017" y="9702" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="3715" top="6803" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[fact-poor_weather]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="18" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="6415" y="7202" />
+                        <point x="4015" y="7202" />
+                      </connector>
+                    </ddscontrol>
+                  </dds>
+</DiagramLayout>
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>-7849</DiagramViewPortLeft>
+                <DiagramViewPortTop>-6</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>92</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>Do An Olap Ck Ver1</DataSourceID>
+      <Schema>
+        <xs:schema id="Do_x0020_An_x0020_Olap_x0020_Ck_x0020_Ver1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="Do_x0020_An_x0020_Olap_x0020_Ck_x0020_Ver1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="19720d46-02c2-4c23-ae06-e5a7fe53cb14">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_weather_station" msprop:design-time-name="44d75355-3f9b-47b2-bc27-9b04ec3acff7" msprop:FriendlyName="weather_station" msprop:DbSchemaName="dbo" msprop:DbTableName="weather_station" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="StationID" msprop:design-time-name="2816bf54-2c29-477c-88d0-1d0f70d58b75" msprop:DbColumnName="StationID" msprop:FriendlyName="StationID" type="xs:int" />
+                      <xs:element name="StationName" msprop:design-time-name="4c5750f8-7cbb-4361-a375-296ad3cab2f3" msprop:DbColumnName="StationName" msprop:FriendlyName="StationName" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="200" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CountryID" msprop:design-time-name="5fe497f8-a2b6-48ab-b68b-2cc61071f88b" msprop:DbColumnName="CountryID" msprop:FriendlyName="CountryID" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_poor_weather" msprop:design-time-name="bdb20055-a6af-4bb6-b5dc-dd94621bcfef" msprop:FriendlyName="poor_weather" msprop:DbSchemaName="dbo" msprop:DbTableName="poor_weather" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="PoorWeatherID" msprop:design-time-name="6c7aa794-45fe-49a8-ba94-1b43b33167de" msprop:DbColumnName="PoorWeatherID" msprop:FriendlyName="PoorWeatherID">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Thunder" msprop:design-time-name="93d87dcd-ae20-49c9-beee-6c8ce74d0890" msprop:DbColumnName="Thunder" msprop:FriendlyName="Thunder" type="xs:int" minOccurs="0" />
+                      <xs:element name="Sleet" msprop:design-time-name="6cb9ab54-0ea0-41eb-9ec3-8587b2dbbb3e" msprop:DbColumnName="Sleet" msprop:FriendlyName="Sleet" type="xs:int" minOccurs="0" />
+                      <xs:element name="Hail" msprop:design-time-name="5e378222-4895-43b7-9cec-932e85fafdd8" msprop:DbColumnName="Hail" msprop:FriendlyName="Hail" type="xs:int" minOccurs="0" />
+                      <xs:element name="Dust_x0020_or_x0020_Sand" msprop:design-time-name="71362fd5-8648-484f-884b-f1744070ea2d" msprop:DbColumnName="Dust or Sand" msprop:FriendlyName="Dust or Sand" type="xs:int" minOccurs="0" />
+                      <xs:element name="Smoke_x0020_or_x0020_Haze" msprop:design-time-name="7c70b606-b19c-45de-8e03-5c2292e5995d" msprop:DbColumnName="Smoke or Haze" msprop:FriendlyName="Smoke or Haze" type="xs:int" minOccurs="0" />
+                      <xs:element name="Blowing_x0020_Snow" msprop:design-time-name="00da1eea-257b-44bd-be50-f17bd33f86a2" msprop:DbColumnName="Blowing Snow" msprop:FriendlyName="Blowing Snow" type="xs:int" minOccurs="0" />
+                      <xs:element name="Rain" msprop:design-time-name="f9d862f3-0b81-4d3e-8c95-8df1b5521d1d" msprop:DbColumnName="Rain" msprop:FriendlyName="Rain" type="xs:int" minOccurs="0" />
+                      <xs:element name="_x0020_Snow" msprop:design-time-name="128f6629-0dc0-4830-b397-ee96330e9d6d" msprop:DbColumnName=" Snow" msprop:FriendlyName=" Snow" type="xs:int" minOccurs="0" />
+                      <xs:element name="Glaze" msprop:design-time-name="70dc655f-9d82-41e1-8a45-8a20a7cb48e5" msprop:DbColumnName="Glaze" msprop:FriendlyName="Glaze" type="xs:int" minOccurs="0" />
+                      <xs:element name="Fog" msprop:design-time-name="5fe88a0d-cc56-4b8b-9e5e-70151d923cce" msprop:DbColumnName="Fog" msprop:FriendlyName="Fog" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_fact" msprop:design-time-name="601c1c72-f6b4-45f7-8e18-856b66807908" msprop:FriendlyName="fact" msprop:DbSchemaName="dbo" msprop:DbTableName="fact" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="FactID" msprop:design-time-name="3afe9320-fd42-4868-b374-93092b30bad9" msprop:DbColumnName="FactID" msprop:FriendlyName="FactID" type="xs:int" minOccurs="0" />
+                      <xs:element name="StationID" msprop:design-time-name="c7b46146-bf3a-4b14-89f0-289238a3845f" msprop:DbColumnName="StationID" msprop:FriendlyName="StationID" type="xs:int" minOccurs="0" />
+                      <xs:element name="DateID" msprop:design-time-name="637eb1ac-f2cf-47c2-8b2d-3343ad018e6d" msprop:DbColumnName="DateID" msprop:FriendlyName="DateID" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PoorWeatherID" msprop:design-time-name="5cd1a7a9-8eb8-45a3-bd7d-0730548355ba" msprop:DbColumnName="PoorWeatherID" msprop:FriendlyName="PoorWeatherID" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Precip" msprop:design-time-name="05446957-93f7-43cb-9cc8-33b8f51ebd1e" msprop:DbColumnName="Precip" msprop:FriendlyName="Precip" type="xs:double" minOccurs="0" />
+                      <xs:element name="MaxCelsius" msprop:design-time-name="ce4e65e2-fd7a-4706-8897-7261edbb6aea" msprop:DbColumnName="MaxCelsius" msprop:FriendlyName="MaxCelsius" type="xs:double" minOccurs="0" />
+                      <xs:element name="MinCelsius" msprop:design-time-name="aab94c3e-2e87-4bd4-bfec-a3fade8a944b" msprop:DbColumnName="MinCelsius" msprop:FriendlyName="MinCelsius" type="xs:double" minOccurs="0" />
+                      <xs:element name="WindyDriection" msprop:design-time-name="c6599547-bd77-4314-92cb-df664cf0439b" msprop:DbColumnName="WindyDriection" msprop:FriendlyName="WindyDriection" type="xs:double" minOccurs="0" />
+                      <xs:element name="MaximumWindySpeed" msprop:design-time-name="031b534e-e6b3-4f4f-8206-255152e9ba3e" msprop:DbColumnName="MaximumWindySpeed" msprop:FriendlyName="MaximumWindySpeed" type="xs:double" minOccurs="0" />
+                      <xs:element name="SnowDepthInch" msprop:design-time-name="879e7ac3-3161-4092-b5eb-f8624e487e82" msprop:DbColumnName="SnowDepthInch" msprop:FriendlyName="SnowDepthInch" type="xs:double" minOccurs="0" />
+                      <xs:element name="WindyTime" msprop:design-time-name="9b1e407b-4ef6-4385-b8f1-ff8221e8db7e" msprop:DbColumnName="WindyTime" msprop:FriendlyName="WindyTime" type="xs:double" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_date" msprop:design-time-name="3051a456-a92b-4b56-96c5-b3ce52ce15a3" msprop:FriendlyName="date" msprop:DbSchemaName="dbo" msprop:DbTableName="date" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="DateID" msprop:design-time-name="62095880-69bf-4e8b-a034-48e735160c96" msprop:DbColumnName="DateID" msprop:FriendlyName="DateID">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Day" msprop:design-time-name="d513d896-d176-4598-9489-bac63fe34828" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" minOccurs="0" />
+                      <xs:element name="Month" msprop:design-time-name="67f29f1a-b8e1-4251-9281-aa10b4921836" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" minOccurs="0" />
+                      <xs:element name="Year" msprop:design-time-name="084b20c0-f90f-47e1-ba3f-4888da33fa53" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+            <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_weather_station" />
+              <xs:field xpath="StationID" />
+            </xs:unique>
+            <xs:unique name="dbo_poor_weather_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_poor_weather" />
+              <xs:field xpath="PoorWeatherID" />
+            </xs:unique>
+            <xs:unique name="dbo_date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_date" />
+              <xs:field xpath="DateID" />
+            </xs:unique>
+          </xs:element>
+          <xs:annotation>
+            <xs:appinfo>
+              <msdata:Relationship name="fact-weather_station" msdata:parent="dbo_weather_station" msdata:child="dbo_fact" msdata:parentkey="StationID" msdata:childkey="StationID" />
+              <msdata:Relationship name="fact-date" msdata:parent="dbo_date" msdata:child="dbo_fact" msdata:parentkey="DateID" msdata:childkey="DateID" />
+              <msdata:Relationship name="fact-poor_weather" msdata:parent="dbo_poor_weather" msdata:child="dbo_fact" msdata:parentkey="PoorWeatherID" msdata:childkey="PoorWeatherID" />
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:schema>
+        <Do_x0020_An_x0020_Olap_x0020_Ck_x0020_Ver1 xmlns="" />
+      </Schema>
+    </DataSourceView>
+    <DataSourceView>
+      <ID>Poor Weather_DMDSV</ID>
+      <Name>Poor Weather_DMDSV</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout />
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>0</DiagramViewPortLeft>
+                <DiagramViewPortTop>0</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>100</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>.</DataSourceID>
+      <Schema>
+        <xs:schema id="DIMENSION_CONTENT_SCHEMA" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="DIMENSION_CONTENT_SCHEMA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="20cbebaa-4e48-49bc-a119-680b60695373">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="DIMENSION_CONTENT_ROWSET" msprop:design-time-name="a4b09849-da8c-44ae-93d5-f2c247397ddf" msprop:QueryDefinition="SELECT * FROM [Poor Weather].DIMENSION_CONTENT">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ATTRIBUTE_NAME" msprop:design-time-name="88a90e29-91ea-432b-85a4-d2decdc05017" type="xs:string" minOccurs="0" />
+                      <xs:element name="NODE_NAME" msprop:design-time-name="ee69cc62-ccaa-404f-a56f-d4c8410da233" type="xs:string" minOccurs="0" />
+                      <xs:element name="NODE_TYPE" msprop:design-time-name="7f877204-a3c4-4b92-bb98-8dd9acd31728" type="xs:int" minOccurs="0" />
+                      <xs:element name="NODE_GUID" msprop:design-time-name="e2723d9c-9b64-415b-b68e-107e9b25bcc6" type="xs:string" minOccurs="0" />
+                      <xs:element name="NODE_CAPTION" msprop:design-time-name="89539196-0194-4351-a598-8ba983b33e9c" type="xs:string" minOccurs="0" />
+                      <xs:element name="CHILDREN_CARDINALITY" msprop:design-time-name="a670fbdf-bd7c-434d-8f7e-5b3fbf08ad1c" type="xs:unsignedInt" minOccurs="0" />
+                      <xs:element name="PARENT_UNIQUE_NAME" msprop:design-time-name="58d5b10f-0dd6-419e-b398-f7dbbe0efb45" type="xs:string" minOccurs="0" />
+                      <xs:element name="NODE_DESCRIPTION" msprop:design-time-name="5c9f48e2-6492-4cfb-922f-69df2b1dd4ea" type="xs:string" minOccurs="0" />
+                      <xs:element name="NODE_RULE" msprop:design-time-name="e680293d-c556-4a2f-bb3f-69eab533c3c5" type="xs:string" minOccurs="0" />
+                      <xs:element name="MARGINAL_RULE" msprop:design-time-name="bc01a350-da06-41d5-84cf-6c999001c596" type="xs:string" minOccurs="0" />
+                      <xs:element name="NODE_PROBABILITY" msprop:design-time-name="b7018de1-ec11-47c3-adf5-8ac25697d637" type="xs:double" minOccurs="0" />
+                      <xs:element name="MARGINAL_PROBABILITY" msprop:design-time-name="86425ffb-f728-4241-a114-45617ee7e298" type="xs:double" minOccurs="0" />
+                      <xs:element name="NODE_SUPPORT" msprop:design-time-name="9d6c26f7-a9c0-46ab-a7a6-d7f8ff827e79" type="xs:double" minOccurs="0" />
+                      <xs:element name="MSOLAP_MODEL_COLUMN" msprop:design-time-name="b195f1fe-a034-4f8d-a2bd-90de1c458e5d" type="xs:string" minOccurs="0" />
+                      <xs:element name="MSOLAP_NODE_SCORE" msprop:design-time-name="a5fbac8c-d673-40f8-ba7d-0771cf95b0dd" type="xs:double" minOccurs="0" />
+                      <xs:element name="MSOLAP_NODE_SHORT_CAPTION" msprop:design-time-name="4dbbb3a9-8c14-4f77-bb76-de86c82d816c" type="xs:string" minOccurs="0" />
+                      <xs:element name="NODE_UNIQUE_NAME" msprop:design-time-name="46e369d1-4347-467a-8038-612bac567637" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <DIMENSION_CONTENT_SCHEMA xmlns="" />
+      </Schema>
+    </DataSourceView>
+  </DataSourceViews>
+</Database>

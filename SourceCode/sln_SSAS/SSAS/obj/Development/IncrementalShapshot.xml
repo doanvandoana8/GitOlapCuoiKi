@@ -73,6 +73,13 @@
           <String>Fact 2</String>
         </ID>
       </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>g+g7yVNJS1JTewxFdOswsXj6sYo=15-Jan-18 10:54:1715-Jan-18 10:54:17</TimeStamp>
+        <ID>
+          <String>Fact 3</String>
+        </ID>
+      </ObjectSnapshot>
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
@@ -85,5 +92,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2018-01-15T03:32:16.86Z</LastDeployed>
+  <LastDeployed>2018-01-15T07:15:54.686667Z</LastDeployed>
 </DeploymentSnapshot>

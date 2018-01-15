@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>do_an_olap_ck_ver1</Database>
+    <Server>vandoan\vandoan</Server>
+    <ConnectionString>DataSource=vandoan\vandoan;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>4RlEAmC+RkPuecPpg4e06TzaW1k=15-Jan-18 14:22:1415-Jan-18 14:22:03</TimeStamp>
+        <ID>
+          <String>Do An Olap Ck Ver1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>cwUf3buXlkqjBYrPHMp7Zp1Qn7E=15-Jan-18 14:23:0615-Jan-18 14:22:27</TimeStamp>
+        <ID>
+          <String>Do An Olap Ck Ver1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>TWWilRHtH/tzzsKF2HEu+xQJE48=15-Jan-18 14:25:1815-Jan-18 14:25:18</TimeStamp>
+        <ID>
+          <String>Poor Weather_DMDSV</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>d9DH9CFoTBIUw+F26iQsLHYmdFM=15-Jan-18 14:23:4015-Jan-18 14:22:54</TimeStamp>
+        <ID>
+          <String>Weather Station</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>nxactnO4Z7rGMW1lYIfRsyi6KoY=15-Jan-18 14:23:4815-Jan-18 14:22:54</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>eoVi6WByy3E091v4DiOUrw8YPUw=15-Jan-18 14:24:0415-Jan-18 14:22:54</TimeStamp>
+        <ID>
+          <String>Poor Weather</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qH85gKwW0/AgEGIYKOs0GCNFvrQ=15-Jan-18 14:25:1815-Jan-18 14:25:18</TimeStamp>
+        <ID>
+          <String>Poor Weather_DMDim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>fRXwcR1WSiFpYX9W1Q5+fFrcck4=15-Jan-18 14:24:0415-Jan-18 14:22:54hzfjd174IvsY3bY70QybElf82ik=15-Jan-18 14:22:5515-Jan-18 14:22:54</TimeStamp>
+        <ID>
+          <String>Do An Olap Ck Ver1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>iESVX83ir2v4Nc74gEFkWVU3KYY=15-Jan-18 14:46:3115-Jan-18 14:25:18</TimeStamp>
+        <ID>
+          <String>windydirPre</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>zvdjKhVdXHD4VzMCudSDrJjqwns=15-Jan-18 14:43:3615-Jan-18 14:43:36</TimeStamp>
+        <ID>
+          <String>wpre</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>AtKRaOS281yC4I5Uor+WT/1pskI=15-Jan-18 15:12:1715-Jan-18 15:12:17</TimeStamp>
+        <ID>
+          <String>Poor Weather Demo</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>Xd+PlZ1ZvYstxKOIeY2ARYnCIAA=15-Jan-18 14:21:4015-Jan-18 14:21:40</TimeStamp>
+      <ID>
+        <String>do_an_olap_ck_ver1</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-01-15T08:12:27.486667Z</LastDeployed>
+</DeploymentSnapshot>

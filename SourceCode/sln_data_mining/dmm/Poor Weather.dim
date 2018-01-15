@@ -1,0 +1,295 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="41c4d545-f284-4334-8a9d-d3e10d2e4ed4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Poor Weather</ID>
+  <Name>Poor Weather</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2639" scrolltop="-2779" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8493" y="12779" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="poor_weather" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3175" height="8625" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000670c0000b1210000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_poor_weather" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2639</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2779</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d0233498-1e3c-41d1-bb18-74f9f410f1c1">
+    <DataSourceViewID>Do An Olap Ck Ver1</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="db8f3fc7-22c8-488f-90c5-ea19e90dbfa3">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b911f2a9-21b4-44b2-9dd2-d0e8925d3cf8">
+      <ID>Poor Weather ID</ID>
+      <Name>Poor Weather ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f379abbf-b30a-477e-8e0a-539fd6cd0b2c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f44716b-886e-4e97-bbbf-7b19c0a7ae49">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>PoorWeatherID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9bb5072e-0544-4d76-83f8-704e67671262">
+          <AttributeID>Thunder</AttributeID>
+          <Name>Thunder</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e18821f4-6f29-4616-9dc9-03b60cc68d6a">
+          <AttributeID>Sleet</AttributeID>
+          <Name>Sleet</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f30d26ae-c03d-4c50-82ce-2fa21882f7e4">
+          <AttributeID>Hail</AttributeID>
+          <Name>Hail</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bdf1d983-a99a-4638-9394-df10040a37c0">
+          <AttributeID>Dust Or Sand</AttributeID>
+          <Name>Dust Or Sand</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e23aa659-1220-4f15-b879-975dfc1fffb5">
+          <AttributeID>Smoke Or Haze</AttributeID>
+          <Name>Smoke Or Haze</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6dbdbbcc-4a71-4636-bb3b-515a23cdafe8">
+          <AttributeID>Blowing Snow</AttributeID>
+          <Name>Blowing Snow</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7710fe01-e6d9-4d1b-b7e8-68b266a942ff">
+          <AttributeID>Rain</AttributeID>
+          <Name>Rain</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e2e15fe8-3a3b-4023-a4a2-133698dab7dd">
+          <AttributeID>Snow</AttributeID>
+          <Name>Snow</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f8b49c23-aedd-45d3-9a1b-18fa5996ccd5">
+          <AttributeID>Glaze</AttributeID>
+          <Name>Glaze</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aebbd7d1-be90-444d-a909-520234572ff6">
+          <AttributeID>Fog</AttributeID>
+          <Name>Fog</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f2137e3d-1826-436a-bb1d-34b960ffe8ba">
+      <ID>Thunder</ID>
+      <Name>Thunder</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d801a9f1-f36d-46d9-a49a-bab4af1f90f9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df295e41-f5ae-4363-b349-c78aebe09aff">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>Thunder</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="42059793-db1c-49c9-9d94-bfb7ae6e2939">
+      <ID>Sleet</ID>
+      <Name>Sleet</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4108577d-1d26-4bb9-8b88-13ddcd677cfd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b8e3b04-8b84-4b68-988d-d830f59a3ada">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>Sleet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e66403c4-4c43-40a9-854e-7958e2ee7107">
+      <ID>Hail</ID>
+      <Name>Hail</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6bc246f3-5561-49bb-aff5-eef08f98af31">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="678b8c09-2874-44e7-b79c-2e5b88b9068e">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>Hail</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f3987d8-abbd-441d-b59a-c28a7f00c249">
+      <ID>Dust Or Sand</ID>
+      <Name>Dust Or Sand</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a70f633b-51e1-4591-a3de-c1ab84c11e80">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d1729d3-74e4-4280-b5fb-5f1211f68bb7">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>Dust_x0020_or_x0020_Sand</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="84a319c5-9f24-42db-92ac-5b2a4406f537">
+      <ID>Smoke Or Haze</ID>
+      <Name>Smoke Or Haze</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b60a1767-b7ba-4a06-a70d-fdfd841478e0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="da8bd173-c7f1-4cb1-bfd2-4a9a1fe3df8e">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>Smoke_x0020_or_x0020_Haze</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0835aee7-b556-49c3-8f66-521faaf13783">
+      <ID>Blowing Snow</ID>
+      <Name>Blowing Snow</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae69eced-c2cd-4b52-9598-5f9268abd31a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fde3ac9e-f866-457a-90d4-69f3209035c1">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>Blowing_x0020_Snow</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b8a51751-9a92-466f-898e-d1378d1deeed">
+      <ID>Rain</ID>
+      <Name>Rain</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7015d7f8-aa88-4456-9fff-d6c08032525d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="494bcb5d-b849-4737-a771-02bb8cb5f93a">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>Rain</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="70b5d2b4-fb70-4d20-ba25-b799ce93285d">
+      <ID>Snow</ID>
+      <Name>Snow</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b43afe22-f250-4438-ac0a-8ffe27659bac">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b2d213f-5294-4406-8a8c-0a1955f0689a">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>_x0020_Snow</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="429e20ea-3e00-4ebb-8aef-cc0dfb476a64">
+      <ID>Glaze</ID>
+      <Name>Glaze</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a06464c4-3892-4753-a8a3-031be71d960a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b44059d0-932e-49d5-9e01-62939cd6f7c9">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>Glaze</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f6deca5c-77ca-4d0e-8f7c-d717173c5e01">
+      <ID>Fog</ID>
+      <Name>Fog</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c84208bd-bdd9-4c9d-9a7d-40918f4725aa">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a9b31c0-36db-4c09-9367-7dbb975b9f96">
+            <TableID>dbo_poor_weather</TableID>
+            <ColumnID>Fog</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

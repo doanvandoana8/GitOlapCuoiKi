@@ -1,0 +1,121 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1bd15609-1456-4c4b-aa7e-f2260d6cd19d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Do An Olap Ck dmm</ID>
+  <Name>Do An Olap Ck dmm</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Do An Olap Ck dmm</DataSourceID>
+  <Schema>
+    <xs:schema id="Do_x0020_An_x0020_Olap_x0020_Ck_x0020_dmm" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Do_x0020_An_x0020_Olap_x0020_Ck_x0020_dmm" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="3a1520e0-1338-441d-95d5-11e1f54e996e">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_excel_pivot_table" msprop:design-time-name="4ec44e9d-b6e0-48da-8d66-745dc810c130" msprop:DbTableName="excel_pivot_table" msprop:FriendlyName="excel_pivot_table" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactID" msprop:design-time-name="84b5d33b-80bc-4935-9277-012f986c47cd" msprop:DbColumnName="FactID" msprop:FriendlyName="FactID" type="xs:int" minOccurs="0" />
+                  <xs:element name="CountryID" msprop:design-time-name="15a520f2-d441-444a-8502-d60dc32cdc1a" msprop:DbColumnName="CountryID" msprop:FriendlyName="CountryID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DateID" msprop:design-time-name="e7e91bb8-170c-437b-8aac-fbb6bbee0d59" msprop:DbColumnName="DateID" msprop:FriendlyName="DateID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StationID" msprop:design-time-name="2928663d-6c07-47f4-9a47-ca80450806c4" msprop:DbColumnName="StationID" msprop:FriendlyName="StationID" type="xs:int" />
+                  <xs:element name="PoorWeatherID" msprop:design-time-name="3db87579-7fcd-426e-a951-5540f0cc2305" msprop:DbColumnName="PoorWeatherID" msprop:FriendlyName="PoorWeatherID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CountryName" msprop:design-time-name="29b5afdd-c4dd-4dcd-9f93-51f158a16b39" msprop:DbColumnName="CountryName" msprop:FriendlyName="CountryName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StationName" msprop:design-time-name="0e8549fb-4c0c-4ea4-81e4-af6995150329" msprop:DbColumnName="StationName" msprop:FriendlyName="StationName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day" msprop:design-time-name="2052f139-014f-48a5-9a53-2fd9dc1e98ba" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:design-time-name="7789a0c9-1108-4d67-b8b8-139b95cc714b" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msprop:design-time-name="3827765d-c075-411a-a779-128fd170f178" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="_x0020_Snow" msprop:design-time-name="6319ae80-53eb-4b2c-b09c-10e364ab248d" msprop:DbColumnName=" Snow" msprop:FriendlyName=" Snow" type="xs:int" minOccurs="0" />
+                  <xs:element name="Blowing_x0020_Snow" msprop:design-time-name="b465b703-462c-4b59-b2b0-76b9895838a2" msprop:DbColumnName="Blowing Snow" msprop:FriendlyName="Blowing Snow" type="xs:int" minOccurs="0" />
+                  <xs:element name="Dust_x0020_or_x0020_Sand" msprop:design-time-name="16222483-5566-48ed-9ff1-5614611af41c" msprop:DbColumnName="Dust or Sand" msprop:FriendlyName="Dust or Sand" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fog" msprop:design-time-name="ded4c4c3-00f2-4d05-88d4-7eeecd09ad19" msprop:DbColumnName="Fog" msprop:FriendlyName="Fog" type="xs:int" minOccurs="0" />
+                  <xs:element name="Glaze" msprop:design-time-name="8ca677ec-28a3-4492-abe2-aff78ce115e9" msprop:DbColumnName="Glaze" msprop:FriendlyName="Glaze" type="xs:int" minOccurs="0" />
+                  <xs:element name="Hail" msprop:design-time-name="bb653c1a-effd-4892-8bb4-a8e4cb1fe8be" msprop:DbColumnName="Hail" msprop:FriendlyName="Hail" type="xs:int" minOccurs="0" />
+                  <xs:element name="Rain" msprop:design-time-name="85837691-5494-43f6-8ec1-7578b8c8e701" msprop:DbColumnName="Rain" msprop:FriendlyName="Rain" type="xs:int" minOccurs="0" />
+                  <xs:element name="Sleet" msprop:design-time-name="514612e1-09d0-4055-84e4-63fcfc3e8d61" msprop:DbColumnName="Sleet" msprop:FriendlyName="Sleet" type="xs:int" minOccurs="0" />
+                  <xs:element name="Smoke_x0020_or_x0020_Haze" msprop:design-time-name="be6ed40b-1384-48e8-81af-029fe590b8ad" msprop:DbColumnName="Smoke or Haze" msprop:FriendlyName="Smoke or Haze" type="xs:int" minOccurs="0" />
+                  <xs:element name="Thunder" msprop:design-time-name="3c646adf-544e-4acc-80fa-c052288299e2" msprop:DbColumnName="Thunder" msprop:FriendlyName="Thunder" type="xs:int" minOccurs="0" />
+                  <xs:element name="MaxCelsius" msprop:design-time-name="95724236-9ffc-4767-8bc4-34935a067035" msprop:DbColumnName="MaxCelsius" msprop:FriendlyName="MaxCelsius" type="xs:double" minOccurs="0" />
+                  <xs:element name="MinCelsius" msprop:design-time-name="0e799522-3778-4168-b750-9cb9a03036a0" msprop:DbColumnName="MinCelsius" msprop:FriendlyName="MinCelsius" type="xs:double" minOccurs="0" />
+                  <xs:element name="MaximumWindySpeed" msprop:design-time-name="624f2413-7113-490d-9e09-26679da5261a" msprop:DbColumnName="MaximumWindySpeed" msprop:FriendlyName="MaximumWindySpeed" type="xs:double" minOccurs="0" />
+                  <xs:element name="Precip" msprop:design-time-name="6fcb4e5f-67d7-4121-b6f3-177a9cd2a36f" msprop:DbColumnName="Precip" msprop:FriendlyName="Precip" type="xs:double" minOccurs="0" />
+                  <xs:element name="SnowDepthInch" msprop:design-time-name="b06288ff-3ba7-4c2c-a75b-02874f225c0f" msprop:DbColumnName="SnowDepthInch" msprop:FriendlyName="SnowDepthInch" type="xs:double" minOccurs="0" />
+                  <xs:element name="WindyDriection" msprop:design-time-name="28de98d4-fbcb-470f-aa90-caeff1923ed2" msprop:DbColumnName="WindyDriection" msprop:FriendlyName="WindyDriection" type="xs:double" minOccurs="0" />
+                  <xs:element name="WindyTime" msprop:design-time-name="0ef72a50-0038-4fb8-8fa5-abb7f58c4185" msprop:DbColumnName="WindyTime" msprop:FriendlyName="WindyTime" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Do_x0020_An_x0020_Olap_x0020_Ck_x0020_dmm xmlns="" />
+  </Schema>
+</DataSourceView>
